@@ -1,0 +1,2 @@
+C:\Users\USER\Desktop\경일\콘솔프로젝트2\ConsolePRJ2\obj\Debug\콘솔프로젝트2.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\경일\콘솔프로젝트2\ConsolePRJ2\obj\Debug\콘솔프로젝트2.csproj.CoreCompileInputs.cache
