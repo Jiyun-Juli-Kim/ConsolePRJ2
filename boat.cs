@@ -16,7 +16,6 @@ namespace 콘솔프로젝트2
             int boatPrice;
         }
     }
-//ddddsfsdfds
 
 
 

@@ -7,7 +7,7 @@ public class Goods
 
 	public Goods()
 	{
-		Name = Name;
-		BasePrice = BasePrice;
+		Name = name;
+		BasePrice = basePrice;
 	}
 }
