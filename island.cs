@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Island
+public abstract class Island
 {
-    public Island()
-    {
-        int islandId;
-        string islandName;
-        string goods;
-    }
+    public abstract string islandName;
+    public abstract string goods;
+
 }
 
 public class homeIsland : Island
