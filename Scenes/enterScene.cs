@@ -14,13 +14,7 @@ namespace 콘솔프로젝트2.Scenes
         public EnterScene(Game game) : base(game)
         {
         }
-
-        public Island()
-        {
-            int islandId;
-            string islandName;
-        }
-
+   
         public override void Enter()
         {
             Console.Clear();

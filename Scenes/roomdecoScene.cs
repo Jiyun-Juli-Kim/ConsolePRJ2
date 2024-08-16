@@ -6,7 +6,7 @@ namespace 콘솔프로젝트2.Scenes
     {
         private string input;
 
-        public roomdecoScene(Game game) : base(game)
+        public roomDecoScene(Game game) : base(game)
         {
         }
 

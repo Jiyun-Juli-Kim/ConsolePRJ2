@@ -95,7 +95,7 @@ namespace 콘솔프로젝트2.Scene
             {
                 randomPrice = random.NextDouble() * (5.0 - 2.0) + 2.0;
             }
-            goodsPrice = randomPrice * basePrice;
+            goodsPrice = randomPrice * BasePrice;
         }
     }
 }
