@@ -1,19 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace 콘솔프로젝트2.Scenes
 {
-    public class MyRoomScene : Scene
+    public class EnterScene : Scene
     {
         private string input;
 
-        public MyRoomScene(Game game) : base(game)
+        public EnterScene(Game game) : base(game)
         {
+        }
+
+        public Island()
+        {
+            int islandId;
+            string islandName;
         }
 
         public override void Enter()
         {
             Console.Clear();
-            Console.WriteLine($"마이룸에 들어왔습니다...");
+            Console.WriteLine($"{islandName}에 입항합니다...");
             Thread.Sleep(2000);
         }
 
@@ -31,9 +42,12 @@ namespace 콘솔프로젝트2.Scenes
         {
             Console.Clear();
             game.Player.ShowInfo();
-            Console.WriteLine("무엇을 할까요?");
-            Console.WriteLine("1. 마이룸 꾸미기");
-            Console.WriteLine("2. 돌아가기");
+            Console.WriteLine($"{islandName}이다.");
+            Console.WriteLine("어디로 이동하겠습니까?");
+            Console.WriteLine("1. 선착장");
+            Console.WriteLine("2. 교역장");
+            Console.WriteLine("3. 시장");
+            Console.WriteLine("4. 마이룸");
             Console.Write("선택 : ");
         }
 
