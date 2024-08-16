@@ -2,6 +2,12 @@
 
 public class Goods
 {
-	public string Name;
-	public double BasePrice;
+	public string Name { get; set; }
+	public double BasePrice { get; set; }
+
+	public Goods()
+	{
+		Name = Name;
+		BasePrice = BasePrice;
+	}
 }

@@ -10,11 +10,12 @@ namespace 콘솔프로젝트2.Scene
 {
     public class TpScene : Scene
     {
+        private Island CurIsland
         private Random random;
-        private string goods;
+        /*private string goods;
         private string otherGoods;
         private double goodsPrice;
-        private double otherGoodsPrice;
+        private double otherGoodsPrice; 
 
         public TpScene(Game game, string goods, string otherGoods) : base(game)
         {
@@ -23,14 +24,20 @@ namespace 콘솔프로젝트2.Scene
             random = new Random();
             UpdatePrice();
         }
+        */
 
         public override void Enter()
         {
             Console.Clear();
             Console.WriteLine("교역장에 들어갑니다...");
             Thread.Sleep(2000);
-            Console.WriteLine($"{goods}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
-            Console.WriteLine($"{goods}의 가격은{goodsPrice}, {otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
+            Console.WriteLine($"{curIsland.Goods.Name}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
+            Console.WriteLine($"{curIsland.Goods}의 가격은{curIsland.goodsPrice}입니다.");
+            Console.WriteLine($"{otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
+            Console.WriteLine($"{otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
+            // 나머지 2개 섬의 물품 가격 어떻게 표현할건지?
+
+
         }
 
         public override void Render()
@@ -73,7 +80,7 @@ namespace 콘솔프로젝트2.Scene
 
         private void ImportItem()
         {
-            Console.WriteLine($"{goods}을 수입합니다..."); 
+            Console.WriteLine($"{curIsland.Goods}을 수입합니다..."); 
         }
 
         private void ExportItem()
@@ -88,7 +95,7 @@ namespace 콘솔프로젝트2.Scene
             {
                 randomPrice = random.NextDouble() * (5.0 - 2.0) + 2.0;
             }
-            goodsPrice = randomPrice * goodsPrice;
+            goodsPrice = randomPrice * basePrice;
         }
     }
 }
