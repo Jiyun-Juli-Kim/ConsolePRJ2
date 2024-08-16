@@ -24,17 +24,18 @@ namespace 콘솔프로젝트2.Scenes
 
         public override void Input()
         {
-            input = Console.ReadLine();
-        }
-
-        public override void Render()
-        {
             Console.Clear();
             game.Player.ShowInfo();
             Console.WriteLine("무엇을 할까요?");
             Console.WriteLine("1. 마이룸 꾸미기");
             Console.WriteLine("2. 돌아가기");
             Console.Write("선택 : ");
+            input = Console.ReadLine();
+        }
+
+        public override void Render()
+        {
+           public void ShowRoom()
         }
 
         public override void Update()

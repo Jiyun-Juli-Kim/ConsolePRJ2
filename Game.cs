@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestRPG.Players;
-using TestRPG.Scenes;
 
 namespace 콘솔프로젝트2
 {
