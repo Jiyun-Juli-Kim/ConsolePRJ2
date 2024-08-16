@@ -12,27 +12,14 @@ namespace 콘솔프로젝트2.Scene
     {
         private Island CurIsland
         private Random random;
-        /*private string goods;
-        private string otherGoods;
-        private double goodsPrice;
-        private double otherGoodsPrice; 
-
-        public TpScene(Game game, string goods, string otherGoods) : base(game)
-        {
-            this.goods = goods;
-            this.otherGoods = otherGoods;
-            random = new Random();
-            UpdatePrice();
-        }
-        */
 
         public override void Enter()
         {
             Console.Clear();
             Console.WriteLine("교역장에 들어갑니다...");
             Thread.Sleep(2000);
-            Console.WriteLine($"{curIsland.Goods.Name}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
-            Console.WriteLine($"{curIsland.Goods}의 가격은{curIsland.goodsPrice}입니다.");
+            Console.WriteLine($"{curIsland.goods}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
+            Console.WriteLine($"{curIsland.goods}의 가격은{curIsland.goodsPrice}입니다.");
             Console.WriteLine($"{otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
             Console.WriteLine($"{otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
             // 나머지 2개 섬의 물품 가격 어떻게 표현할건지?

@@ -42,15 +42,10 @@ namespace 콘솔프로젝트2.Scenes
             switch (input)
             {
                 case "1":
-                    game.ChangeScene(SceneType.Port);
+                    game.ChangeScene(SceneType.RoomDeco);
                     break;
                 case "2":
-                    game.ChangeScene(SceneType.TradingPost);
-                    break;
-                case "3":
-                    game.ChangeScene(SceneType.Market);
-                case "4":
-                    game.ChangeScene(SceneType.MyRoom);
+                    game.ChangeScene(SceneType.Enter);
                     break;
             }
         }

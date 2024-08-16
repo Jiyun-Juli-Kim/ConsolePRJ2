@@ -39,6 +39,8 @@ namespace 콘솔프로젝트2.Scenes
             Console.Write("선택 : ");
         }
 
+        public void Upgrade()
+
         public override void Update()
         {
             switch (input)

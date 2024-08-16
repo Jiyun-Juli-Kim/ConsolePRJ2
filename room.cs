@@ -22,10 +22,19 @@ public class Room
 
 		int upgCost = upgCost[Level-1];
 
-		if (Player.Balance >= upgCost) 
+		if (Player.Balance >= upgCost)
 		{
+			Player.Balance -= upgCost;
+			Level++
+				Console.WriteLLine("방이 업그레이드 되었습니다.");
+			return true;
+		}
 
-
+		else
+		{
+			Console.WriteLLine($"잔액이 {upgcost - Player.Balance}만큼 부족합니다.")
+			return false;
+		}
 	}
 
 

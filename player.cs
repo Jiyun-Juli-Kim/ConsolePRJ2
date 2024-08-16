@@ -2,6 +2,6 @@
 
 public class Player
 {
-	string Name { get; set; }
-	int Balance { get; set; }	
+	public string Name { get; set; }
+	public int Balance { get; private set; }	
 }

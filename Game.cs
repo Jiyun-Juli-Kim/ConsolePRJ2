@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TestRPG.Players;
 using TestRPG.Scenes;
 
-namespace TestRPG
+namespace 콘솔프로젝트2
 {
     public class Game
     {
@@ -47,10 +47,11 @@ namespace TestRPG
         {
             isRunning = true;
 
-            //  public enum SceneType { Title, Map, Market, TradingPost, Port, MyRoom, GameOver}
+            //    public enum SceneType { Title, Map, Enter, Market, TradingPost, Port, MyRoom, RoomDeco, GameOver}
             scenes = new Scene[(int)SceneType.Size];
             scenes[(int)SceneType.Title] = new TitleScene(this);
             scenes[(int)SceneType.Map] = new VoyageScene(this);
+            scenes[(int)SceneType.Enter] = new EnterScene(this);
             scenes[(int)SceneType.Market] = new MarketScene(this);
             scenes[(int)SceneType.TradingPost] = new TPScene(this);
             scenes[(int)SceneType.Port] = new PortScene(this);

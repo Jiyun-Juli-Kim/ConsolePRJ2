@@ -48,7 +48,6 @@ namespace 콘솔프로젝트2
                 Console.WriteLine("1. 온대섬");
                 Console.WriteLine("2. 열대섬");
                 Console.WriteLine("3. 얼음섬");
-                Console.WriteLine("4. 마이룸");
                 Console.Write("선택 : ");
             }
 
