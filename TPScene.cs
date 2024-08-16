@@ -14,6 +14,7 @@ namespace 콘솔프로젝트2.Scene
         private string goods;
         private string otherGoods;
         private double goodsPrice;
+        private double otherGoodsPrice;
 
         public TpScene(Game game, string goods, string otherGoods) : base(game)
         {
@@ -28,8 +29,8 @@ namespace 콘솔프로젝트2.Scene
             Console.Clear();
             Console.WriteLine("교역장에 들어갑니다...");
             Thread.Sleep(2000);
-            Console.WriteLine($"여기서는 {goods}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
-            Console.WriteLine($"{otherGoods}의 현재 수출 가격은 {goodsPrice}:F2}입니다.");
+            Console.WriteLine($"{goods}을 수입하거나 {otherGoods}을 수출할 수 있습니다.");
+            Console.WriteLine($"{goods}의 가격은{goodsPrice}, {otherGoods}의 현재 수출 가격은 {otherGoodsPrice}:F2}입니다.");
         }
 
         public override void Render()
@@ -77,7 +78,7 @@ namespace 콘솔프로젝트2.Scene
 
         private void ExportItem()
         {
-            Console.WriteLine($"{otherGoods}을 수출합니다. 판매 가격은 {goodsPrice}:F2}입니다.");
+            Console.WriteLine($"{otherGoods}을 수출합니다. 판매 가격은 {OtherGoodsPrice}:F2}입니다.");
         }
 
         private void UpdatePrice()
@@ -87,7 +88,7 @@ namespace 콘솔프로젝트2.Scene
             {
                 randomPrice = random.NextDouble() * (5.0 - 2.0) + 2.0;
             }
-            goodsPrice = randomPrice * 100;
+            goodsPrice = randomPrice * goodsPrice;
         }
     }
 }
