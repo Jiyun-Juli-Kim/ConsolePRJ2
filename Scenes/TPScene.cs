@@ -10,7 +10,7 @@ namespace 콘솔프로젝트2.Scene
 {
     public class TpScene : Scene
     {
-        private Island CurIsland
+        private Island CurIsland // 지금 현재 있는 섬 어떻게 가져오징...
         private Random random;
 
         public override void Enter()
